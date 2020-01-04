@@ -1,0 +1,202 @@
+\documentclass[a4paper,twocolumn,usegeometry,english,fontsize=6,DIV=16]{scrartcl}
+
+% Localization options
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Enhanced verbatim sections. We're mainly interested in
+% \verbatiminput though.
+\usepackage{verbatim}
+
+% PDF-compatible landscape mode.
+% Makes PDF viewers show the page rotated by 90°.
+\usepackage{pdflscape}
+
+% Houston, we need to save space.
+
+\usepackage[bottom=2cm,top=2cm]{geometry}
+
+% No vertical space inbetween lists.
+\usepackage{enumitem}
+\setlist{nosep}
+
+% Remove space between paragraphs.
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+% Lower space between lines.
+% \linespread{0.8}
+
+% Get rid of space above and below section headings
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+% Advanced tables
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{\cdot}{#1} }
+
+% Fancy tablerules
+\usepackage{booktabs}
+
+% Graphics
+\usepackage{graphicx}
+
+% Current time
+\usepackage[useregional=numeric]{datetime2}
+
+% Float barriers.
+% Automatically add a FloatBarrier to each \section
+% \usepackage[section]{placeins}
+
+\usepackage{layout}
+
+% Math tools
+\usepackage{mathtools}
+% Math symbols
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{amsthm}
+
+% SI units
+\usepackage{siunitx}
+\DeclareSIUnit\Molar{\textsc{m}}
+\DeclareSIUnit\mole{mol}
+\DeclareSIUnit\rpm{rpm}
+\DeclareSIUnit\cfu{cfu}
+
+% Chemistry
+\usepackage{mhchem}
+
+% Subfigures & captions
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+% 
+% Source code & highlighting
+\usepackage{listings}
+
+% Convenience commands
+\newcommand{\mailsubject}{2003 - Biochemie 3}
+\newcommand{\maillink}[1]{\href{mailto:#1?subject=\mailsubject}
+                               {#1}}
+
+% Should use this command wherever the print date is mentioned.
+\newcommand{\printdate}{\today}
+
+% Empty header/footer
+\pagestyle{empty}
+% Disable header/footer on title page too
+\renewcommand*{\titlepagestyle}{empty}
+
+\subject{1611 - Biochemie 3}
+
+\title{Summary}
+
+\author{Michael Senn \maillink{michael.senn@students.unibe.ch} - 16-126-880}
+
+\date{\printdate}
+
+% Needs to be the last command in the preamble, for one reason or
+% another. 
+\usepackage{hyperref}
+
+\begin{document}
+% Space, we need space
+% \maketitle
+% \vspace*{-20pt}
+% \enlargethispage{40pt}
+
+\section{Gene und Chromosome}
+
+\subsection{DNA als Erbsubstanz}
+
+\begin{description}
+	\item[Transkription] DNA -> RNA durch RNA Polymerase. In Bakterium in
+		Cytoplasma, in Eukaryonten in Zellkern inklusive pre-processing
+		(splicing, capping)
+	\item[Translation] RNA -> Protein durch Ribosome. In Bakterium und
+		Eukaryonten in Cytoplasma.
+	\item[DNA \& RNA-bindende Proteine] Schützen, organisieren \&
+		regulieren ua durch Konformationsänderung Aspekte des
+		Metabolismus. Non-specific binden unabhängig von Sequenz durch
+		zB elektrostatische Interaktionen mit Phosphat Gruppen, für zB
+		Chromosom Kompaktierung. Specific erkennt spezifisch Sequenz
+		durch H-Brücken mit BP, zB Regulation der Gen Expression.
+		Kooperativität: Konformationsänderung einer Untereinheit führt
+		zu Konfand anderer UE. Stark reguliert.
+\end{description}
+
+\subsection{Struktur der DNA}
+
+\begin{description}
+	\item[Nukleosid / Nukleotid] (Desoxy)ribose \& Stickstoffbase vs
+		Nukleosid \& Phosphatgruppe
+	\item[Chemische Transformation von Nukleinsäuren] Spontan (Mutationen)
+		zB Deaminierung, enzymatisch reguliert zB Methylierung
+	\item[Base stacking] Stapeln der hydrophoben BP führt zu weniger
+		Kontakt mit Wasser, fördert Stabilität der DNA Helix.
+	\item[DNA Schmelzpunkt Einfluss] GC führt zu höherer Temperatur
+		(H-Bond), Ionenkonzentration stabilisiert Phosphat-Gruppen,
+		Chaotrope Stoffe destabilisieren H-Bond, pH (de)protoniert
+		Gruppen.
+	\item[Hairpin / Cruciform / Mirror repeat] Hairpin falls
+		Schlaufenbildung aufgrund eines 'inverted repeats' einer
+		single-stranded DNA. Cruciform falls Doppelte Schlaufe wegen
+		double-stranded. Mirror repeat falls Sequenz mit 'Spiegelachse'
+		in der Mitte.
+	\item[A / B / Z Form] B Form am stabilsten unter physiologischen
+		Bedingungen, \SI{3.4}{\angstrom} per BP, \SI{6}{\degree} BP
+		tilt. A in Abwesenheit von Wasser, \SI{2.6}{\angstrom} per BP,
+		\SI{20}{\degree} BP tilt. Z Form linksgängig,
+		\SI{3.7}{\angstrom} per BP, \SI{7}{\degree} BP tilt, bildet
+		sich unter Hochsalzbedingungen mit alternierenden
+		Pyrmidin-Purin Sequenzen.
+	\item[Supercoiling] Verdichtung zirkulärer DNA Moleküle durch
+		verdrehen. L (linking Number) wie oft ein Strang um anderen
+		gewunden. Änderung bedingt DNA Schnitt. Negative/positiver
+		supercoil bei under/overwinding. Topoisomerasen verändern
+		linking number. Typ 1 ohne ATP schneidet ein Strang, Typ 2 mit
+		ATP schneidet beide.
+\end{description}
+
+\section{Transkription - von der DNA zur RNA}
+
+\section{Post-transkriptionelle RNA Prozessierung}
+
+\section{Protein Synthese}
+ 
+% \section{Moleküle des Lebens}
+
+% \begin{description}
+% 	\item[Leben] Weit weg von chem. Gleichgewicht da zB Produkte System
+% 		verlassen, Selbstreplikation mit Fehlermöglichkeit (=
+% 		Evolution). Braucht Energie.
+% \end{description}
+% 
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[width=0.8\linewidth]{graphs/ec_quellen.png}
+% 	\caption{Classification based on carbon and energy source}
+% \end{figure}
+% 
+% \begin{tabu}{lll}
+% 	\toprule
+% 	Struktur & Aufbau & Funktion \\
+% 	\midrule
+% 	Zellwand & Peptidoglycan & Mechanischer Support \\
+% 	\bottomrule
+% \end{tabu}
+
+
+\end{document}
