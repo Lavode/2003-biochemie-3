@@ -35,10 +35,9 @@
 % \linespread{0.8}
 
 % Get rid of space above and below section headings
-\usepackage[compact]{titlesec}
-\titlespacing{\section}{0pt}{*0}{*0}
-\titlespacing{\subsection}{0pt}{*0}{*0}
-\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\RedeclareSectionCommand[beforeskip=0pt,afterskip=0pt]{section}
+\RedeclareSectionCommand[beforeskip=0pt,afterskip=0pt]{subsection}
+\RedeclareSectionCommand[beforeskip=0pt,afterskip=0pt]{subsubsection}
 
 % Advanced tables
 \usepackage{tabu}
@@ -112,6 +111,7 @@
 \usepackage{hyperref}
 
 \begin{document}
+
 % Space, we need space
 % \maketitle
 % \vspace*{-20pt}
@@ -119,7 +119,7 @@
 
 \section{Gene und Chromosome}
 
-\subsection{DNA als Erbsubstanz}
+\subsection{DNA als Erbsubstanz und Struktur der DNA}
 
 \begin{description}
 	\item[Transkription] DNA -> RNA durch RNA Polymerase. In Bakterium in
@@ -135,11 +135,6 @@
 		durch H-Brücken mit BP, zB Regulation der Gen Expression.
 		Kooperativität: Konformationsänderung einer Untereinheit führt
 		zu Konfand anderer UE. Stark reguliert.
-\end{description}
-
-\subsection{Struktur der DNA}
-
-\begin{description}
 	\item[Nukleosid / Nukleotid] (Desoxy)ribose \& Stickstoffbase vs
 		Nukleosid \& Phosphatgruppe
 	\item[Chemische Transformation von Nukleinsäuren] Spontan (Mutationen)
@@ -167,36 +162,128 @@
 		gewunden. Änderung bedingt DNA Schnitt. Negative/positiver
 		supercoil bei under/overwinding. Topoisomerasen verändern
 		linking number. Typ 1 ohne ATP schneidet ein Strang, Typ 2 mit
-		ATP schneidet beide.
+		ATP schneidet beide. NB: Eukaryontische Topoisomerasen können
+		nur positive supercoil aufheben, keine negative supercoil
+		induzieren!
+	\item[Nukleotiden] Purin: Adenine, Guanine, Pyrmidin: Uracil, Thymine,
+		Cytosine.
+\end{description}
+
+\subsection{DNA Schäden \& Reparatur}
+
+\begin{description}
+	\item[DNA Schäden] Hydrolyse der Ribose-Basen Bindung (häufig) oder
+		Phosphodiesterbindung (selten). Methylierung verschiedener
+		Stickstoffe der Basen (mittel), Oxidierung der Basen oder
+		Zucker (selten - mittel)
+	\item[Mutation] Schaden der vor Replikation nicht behoben wurde. Treibende Kraft der Evolution, vererbbar.
+	\item[Ames Test] Inkubation von Bakterien ohne His-Synthese auf Platten
+		ohne His. Nur jene die durch Mutationen (spontan oder durch
+		Stoff induziert) His syntethisieren können wachsen. Führt zu
+		stärkerem Wachstum falls mit mutagenen Stoff in Filterpapier in
+		Mitte der Platte behandelt, exklusive 'clear zone' in jenem
+		Bereich bei welchem Stoff toxisch / zu viele Mutationen.
+	\item[Substitutionsmutation / Punktmutation] Austasch eines BP gegen
+		anderes. (Transition: Purin gg Purin / Pyrmidin gg Pyrmidin,
+		Transversion: Anders). Aufgrund zweisträngiger DNA sind Point
+		mutations nach 1 Generation noch erkennbar, nach 2ter nicht
+		mehr.
+	\item[Indel] Insertion / Deletion
+	\item[Silent / neutral mutation] Ohne Auswirkung auf Genfunktion / AS-Sequenz
+	\item[Single nucleotide polymorphism SNP] Kleine Mutationen in Genen
+		von Individuuen gleicher Spezies.
+	\item[Desaminierung] Ca 100 / Zelle / Tag. Erkennbar \& reparierbar da
+		immer Degradation zu BP das nicht in DNA vorkommt.
+	\item[Depurinierung] \si{10E-5} / Zelle / Tag. Verlust der Base. Führt
+		zu -1 del nach Replikation.
+	\item[Oxidative Modifikationen] durch zB ROS. Kann dazu führen dass
+		Base mit neuer Base paaren kann, bei falscher Reparatur oder
+		bei Replikation damit zu Point Mutation.
+	\item[Basenmethylierung] durch alkylierende Substanzen. Kann dazu
+		führen dass neue Basen-Paarungen, kann still sein, oder alles
+		dazwischen.
+	\item[Pyrimidindimere] Durch UV Strahlung. Basen-Basen Bindung führt zu
+		Knick in DNA, blockiert Polymerase.
+	\item[Rückgratbrucht durch ionisierende Strahlung]
+	\item[Indirekte Reparatur] Betroffener Bereich abgebaut und neu
+		synthetisiert.
+	\item[Direkte Reparatur] Schaden repariert, modifizerte Base
+		wiederhergestellt, Monomer gebrochen etc. Bsp Reparatur von
+		Thymindimeren durch Photolyase, oder Transfer der Methyl-Gruppe
+		alkylierter Basen auf `Opfer'-Molekül durch Methyltransferase.
+	\item[Mismatch Reparatur MMR] Erkennt Template-Strang aufgrund
+		Methylierung da neuer Strang nicht sofort methyliert. Damit MMR
+		auf nicht-methylierten Strang/Strängen. Bildung Loop mit
+		Mismatch darin zwischen zwei Methylierten Stellen, ausschneiden
+		des Bereichs des Template Stranges, Replikation.
+	\item[Base excision repair BER] Erkennen aller Basen die keine
+		H-Brücken mehr bilden (Aufgrund zB Depurinierung oder
+		Deaminierung). Ausschneiden des leeren Rückgrates, Replikation.
+	\item[Nucleotide excision repair NER] Bei zB Pyrimidindimeren
+		Ausschneiden eines n-mers des beschädigten Stranges,
+		Replikation.
+	\item[Doppelstrangbrüche] Während und kurz nach Replikation: Reparatur
+		durch Homologe Rekombination (Ausrichtung an Schwesterstrang,
+		dan erneute Replikation). Ansonsten: Nonhomologous end joining,
+		Abschneiden des Überhanges, dann zusammenfügen.
+	\item[SOS Response] DNA Schaden -> Inaktiviert LexA -> Expression SOS
+		Gene (Mehr und weitere DNA Reparatur Gene, keine Zellteilung).
+		Inaktivierung LexA durch RecA, welches a) DNA Schäden bindet
+		und b) in gebundenem Zustand LexA spaltet.
+\end{description}
+
+\subsection{Chromatinstruktur}
+\begin{description}
+	\item[Chromatin] Komplex aus DNA um Histonen (= Nucleosom) und anderen
+		Proteinen, Erlaubt Konzentration der DNA bis zu Faktor 700.
+		Histone sehr basisch (Lys, Arg) / positiv, stark konserviert.
+		Euchromatin locker, Heterochromatin gewunden (Histone
+		kondensiert).  Acetylierung führt zu Öffnung, Methylierung zu
+		Kondensation.
+	\item[Histon] Protein Komplex, 8 UE, H2A, H2B, H3, H4, 146bp DNA.
+		Helferproteine für Assembly des Oktamers. Interaktion mit DNA
+		hauptsächlich mit Rückgrat und Minor Groove, damit
+		\SI{75}{\percent} der DNA Oberfläche Zugänglich für zB
+		Regulation. H1 `hält' DNA um Histon fest. Mit H1 200 bp.
+	\item[Histonenden] Unstrukturiert / loose. Tragen zur höheren
+		Organisation (zB \SI{30}{\nm} Faser) bei.
+	\item[Unterwundene eukaryontische DNA] Binden DNA an Histon Core
+		induziert negative Supercoil, damit positiven Supercoil in der
+		Nähe. Dieser durch Topoisomerase aufgehoben, damit netto
+		unterwunden.
+	\item[Chromatin Immunoprecipitation (ChIP)] Isolierung Chromatin aus
+		Zelle, Schneiden mit Nuclease (ca 500bp Fragmente) Bindung und
+		Isolierung spezifischer Histon-Modifikationen mit Antikörpern,
+		Extrahierung \& Sequenzierung DNA. Dadurch Erkenntniss in
+		welchem DNA Bereich welche Histon-Modifikationen vorkommen.
+	\item[SMC Proteine] Cohesin verhindert Dissoziation von
+		Schwester-Chromatiden, Condensin helfen Chromatide kondensiert
+		zu halten. Cohesin  wird in Anaphase entfernt damit Aufteilung
+		auf Tochterzellen, nach Chromatinseparation dissazoziiert
+		Condensin damit dekondensation der DNA.
+\end{description}
+
+\subsection{DNA Replikation}
+\begin{description}
+	\item[Semi-konservativ] Bei Replikation werden Stränge des
+		Doppelstranges getrennt und b) bleiben Stränge intern als
+		Einheit.
+	\item[5' -> 3'] Des neuen Stranges, dh 3' -> 5' des Template Stranges.
+		Grund: Neue Phosphat-Gruppe wird an alte Hydroxy-Gruppe
+		angehängt. Benötigt RNA Primer.
+	\item[Okazaki Fragmente] 1k-2k nt in Prokaryonten, 150-200 nt in
+		Eukaryonten.
+	\item[Replikation] Bidirektional ab ORI, Replication Fork bei Trennung
+		des Doppelstranges. Benötigt RNA Primer und \ce{Mg2+} Ionen.
 \end{description}
 
 \section{Transkription - von der DNA zur RNA}
+Test
 
 \section{Post-transkriptionelle RNA Prozessierung}
+Test
 
 \section{Protein Synthese}
- 
-% \section{Moleküle des Lebens}
-
-% \begin{description}
-% 	\item[Leben] Weit weg von chem. Gleichgewicht da zB Produkte System
-% 		verlassen, Selbstreplikation mit Fehlermöglichkeit (=
-% 		Evolution). Braucht Energie.
-% \end{description}
-% 
-% \begin{figure}
-% 	\centering
-% 	\includegraphics[width=0.8\linewidth]{graphs/ec_quellen.png}
-% 	\caption{Classification based on carbon and energy source}
-% \end{figure}
-% 
-% \begin{tabu}{lll}
-% 	\toprule
-% 	Struktur & Aufbau & Funktion \\
-% 	\midrule
-% 	Zellwand & Peptidoglycan & Mechanischer Support \\
-% 	\bottomrule
-% \end{tabu}
-
+Test
 
 \end{document}
