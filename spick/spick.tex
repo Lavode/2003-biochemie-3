@@ -275,13 +275,304 @@
 		Eukaryonten.
 	\item[Replikation] Bidirektional ab ORI, Replication Fork bei Trennung
 		des Doppelstranges. Benötigt RNA Primer und \ce{Mg2+} Ionen.
+	\item[DNA Polymerase Fehlerrate] DNA Polymerasen haben tiefe Fehlerrate
+		von \SIrange{10E-9}{10E-10} aufgrund a) Geometrie der
+		Basenpaarung b) 3' -> 5' Exonukleasenaktivität (entfernen
+		falscher nt) c) DNA Reparatur.
+	\item[DNA Polymerasen in E. Coli] Pol3 (9 Polypeptide, 22 UE)
+		Hauptenzym der Replikation. Beta-Clamp hält Polymerase auf DNA
+		fest. Pol1 mit 5'->3' Exonukleasenaktivität für ua DNA
+		Reparatur und Ersetzen des RNA Primers des Lagging Strand.
+	\item[Replisom] Hilfsproteine zusätzlich zu Pol3 für Replikation, zB
+		RNA Primase (Primer), Helicase (Auftrennen), Topoisomerase, SSB
+		(Verhindern der Rehybridisierung), DNA Ligasen
+	\item[Polymerasen-Komplex] Da zwei Stränge gleichzeitig repliziert zwei
+		Polymerasen in Komplex, und Schlaufenbildung damit beide 5' ->
+		3' Replikation und Polymerasen gegenläufig laufen können.
+	% Todo Bild DNA Replikation, C4, pp30++
+	\item[DNA Ligase] Aktiviert 5' durch Adenylierung (Eukaryonten ATP,
+		Bakterien NAD+), dann Ausbildung Phosphodiesterbindung.
+	\item[Termination der Replikaton] Richtungs-spezifische
+		Terminuns-Regionen halten Replikationsgabel an. Topoisomerase
+		entwindet die zwei Stränge.
+	\item[Replikation in Eukaryonten] Verknüpft mit Zellzyklus (ua
+		Chromatin), Replikation parallel an mehreren AT-reichen
+		Stellen, ca 50 nt/s (Vgl mit 1000 nt/s in Bakterien). Primer
+		hat RNA (Primase) und DNA (Pol alpha) Komponenten. Primer
+		entfernt durch RNAse (RNA) und Flap endonuclease (DNA), Loch
+		aufgefüllt durch Pol delta, geschlossen durch Ligase.
+	\item[Telomere] G-reiche repetitive Sequenzen an Ende der Chromosomen,
+		verhindert Informationsverlust in Zellen der Keimbahn (nicht
+		aber somatische) durch lagging Strand. Wird jeweils wieder
+		`aufgefüllt' durch Telomerase (451nt RNA Template und Reverse
+		Transkriptase).  Telomerase verlängert einen Strand, zweite
+		durch Pol. Verdau des Primers führt zu 3' Überhang, geschützt
+		durch Proteine.
+\end{description}
+
+\subsection{DNA Rekombination}
+
+\begin{description}
+	\item[Genetische Rekombination] Austausch von genetischer Information
+		innerhalb oder zwischen Chromosomen. Rolle in DNA Reparatur,
+		Regulation, genetische Vielfalt, Gen Transfer.
+	\item[Rekombinationstypen] Homolog: Austausch zwischen homologen (=
+		ähnlichen) DNA Stücken. Site-specific: Rekombination an kurzen
+		spezifischen Sequenzen. Mobile Transposons: Autonom
+		replizierende und wandernde DNA Abschnitte.
+	\item[Reparatur Doppelstrangbruch] Falls Schwester-Chromatid verfügbar:
+		Ausrichtung eines Stranges des Schwesterchromatids an
+		gebrochenem Strang. Schneiden der Holiday Struktur (X). Dann
+		reguläre DNA Replikation (beide Chromatiden nun
+		einzel-strängig). RecBCD Helikase/Nuklease bindet, baut Strang
+		ab bis Chi-Sequenz, ab dort wie beschrieben Reparatur. RecA
+		bindet an RecBCD (langsam) und ab dort an Einzelstrang
+		(schnell), verhindert Abbau durch zB Nukleasen.
+	\item[Homologe Rekombination währed Meiose] Doppelstrangbruch, Abbau 5'
+		führt zu Überhang, Paarung des 3' Stranges mit Komplementärem
+		Strang des Schwesterchromatid, Replikation, Auflösen Holiday
+		Junction.
+	\item[Site-specific Recombination] Einfügen und Ausschneiden bestimmter
+		Sequenzen (zB Bakteriophagen), Änderungen der Genexpression.
+		Recombinase erkennt Sequenzen, bricht DNA und rekombiniert.
+		Zwei Familien mit gleicher Funktion, Integrase nutzt Tyrosin,
+		Invertase/Resolvase nutzt Serin. Site-specific recombination
+		führt zu Inversion, oder Insertion/Deletion.
+	\item[Antikörper Diversität Immunoglobulingene] Konstante und variable
+		funktionale Region. Durch site-specific Recombination werden
+		viele verschiedene (eine je Zelle) Antikörper exprimiert.
+		Sobald einer ein Antigen binden kann, wird jene Zelle
+		repliziert - Vervielfachung des bindenden Antikörper.
+	\item[Transposition mobiler genetischer Elemente] Transposons wandern
+		durch Aktivität der Transposase. Autonom (encodieren eigene
+		Transposase) vs non-autonom. Nach cut \& paste / copy \& paste
+		site-specific Rekombination.
+	\item[Retrotransposon] Transposons welche Zwischenschritt als RNA haben
+		(analog Retroviren). LTR Retrotransposons encodieren reverse
+		Transkriptase. LINE encodiert reverse Transkriptase aber ohne
+		LTR (long terminal repeats). SINE ohne reverse Transkriptase,
+		ohne LTR.
+	\item[Transposons in Organismen] Mensch ca \SI{43}{\percent} des
+		Genoms, aber bis auf einige LINEs alles inaktiv. Maus viele
+		aktive Retro-Elemente, verantwortlich für \SI{10}{\percent} der
+		Mutationen (vgl Mensch \SI{0.2}{\percent}.
+	\item[Reverse Transkriptase Aktivität] DNA Polymerase: 3' OH Primer,
+		RNA oder DNA als Template. \ce{Mg2+} katalysiert. Hohe
+		Fehlerrate da kein Proof-reading. Ribonuklease: RNAse H
+		Aktivität. Inhibitor: Nukleosid-Analog inhibieren cDNA, sowie
+		allgemeine Inhibition von RT.
 \end{description}
 
 \section{Transkription - von der DNA zur RNA}
-Test
+
+\subsection{RNA Polymerasen: Struktur und Funktion}
+
+\begin{description}
+	\item[Transkription] RNA Transkript ist an template Strang gebunden,
+		und damit Kopie des coding / non-template Strangs. 
+	\item[Bakterielle RNA Polymerase] Mehrere Untereinheiten (anders als
+		bakterielle DNA Polymerase), keine Exonuklease Aktivität. Sechs
+		untereinheiten, eine davon ($\sigma$) spezifiziert DNA
+		Bindungsstelle / Ausrichtung.
+	\item[$\alpha$-Amanitin] Inhibiert RNA Pol 2 (stark), 3 (schwach), 1
+		(minimal)
+	\item[Eurkaryontische RNA Polymerasen] Pol 1: 5.8S, 18S, 28s rRNA Gene
+		(RNA Vorläufer). Pol 2: Protein-codierende Gene, snoRNA, snRNA,
+		miRNA. Pol 3: tRNA, 5S rRNA, snRNA. Mehr Untereinheiten als
+		bakterielle RNA Pol.
+\end{description}
+
+\subsection{Prokaryontische und Eukaryontische Transkription inklusive Steuersequenzen}
+
+\begin{description}
+	\item[Promotoren] -35 und -10 (Pribnow) AT-Reiche Sequenzen. Besonders
+		stark exprimierte Gene noch -60 bis -40 konservierte `UP
+		Element" Sequenz.
+	\item[Initiations Stelle] $\Sigma$ Faktor bindet, rekrutiert Rest der
+		Polymerase. Nach Promoter disasoziiert $\sigma$ und wird durch
+		NusA ersetzt.
+	\item[Terminationsstelle] Pol dissasoziiert. $\rho$-abhängig:
+		Polymerase hält an Terminationsstelle an, $\rho$ Faktor bindet
+		mRNA, migriert zu Pol unter ATP Verbrauch, löst Pol ab.
+		$\rho$-unabhängig: GC-reicher Hairpin der mRNA stoppt RNAP,
+		führt zu Ablösung der mRNA und Rehybridisierung der DNA.
+	\item[Eurkarontische RNAP Promotoren] Pol1 ein Promoter,
+		Spezies-spezifisch. Pol3 internal Promotoren (+40 bis +80) vs
+		upstream (ähnlich RNA Pol 2)
+	\item[RNAP 2 Promotoren] Länger als prokaryontische Promotoren.
+		Housekeeping genes of CpG Inseln upstream (GC reich).
+		Methylierung jener Cytosine erlaubt Inhibition der
+		Promotoraktivität. Konservierte core promotoer Region mit  BRE,
+		TATA, Inr (Initiator), Downstream core promoter.
+	\item[Enhancer Elemente] Bindung durch regulatorische Proteine
+		upstream. Interaktion mit Mediator, jener mit Pol.
+	\item[Transkriptionsinitiation RNAP2] Bindung TBP und TF. Rekrutierung
+		Pol2, Phosphorylierung der Pol an CTD (c-terminal-domian)
+		startet Transkription, TF helfen Elongation, Dephosphorolation
+		der CTD katalysiert durch Terminationsfaktor führt zu Auflösung
+		der Pol2.
+	\item[TBP] Sattelstruktur, interagiert mit minor groove (unüblich),
+		biegt DNA. Universeller TF, bindet auch TATA-lose RNAP2 und
+		RNAP1/3 Promoter.
+	\item[RNAP2 TF] TBP wie oben. TF2A stabilisiert TF2B und TBP. TF2B
+		bindet an TBP, rekrutiert Pol2-TF2F Komplex. TF2E rekrutiert
+		TF2H, ATP-ase und Helicase Aktivität. TF2F bindet und richtet
+		aus Pol2. TF2H entwindet DNA an Promoter (Helicase),
+		Phosphoryliert CTD, rekrutiert weitere Proteine. Zusammen
+		Äquivalenz zu $\sigma$ Einheit der Prokaryonten.
+	\item[RNA2P EF] Erhöhen Aktivität der Polymerase.
+\end{description}
+
+\subsection{Transkriptionsregulation in Prokaryonten}
+
+\begin{description}
+	\item[Cis und trans-Faktoren] Cis: Sequenzen auf gleichem DNA Molekül
+		zB Operator. Trans: Proteine / RNA welche sequenzspezifisch an
+		Cis binden.
+	\item[Repressor] Bindet an operator, blockiert Promoter, damit keine
+		Bindung der Pol. Durch Signalmoleküle aktiviert oder
+		inaktiviert.
+	\item[Aktivator] Bindet an aktivator-binding-site, interagiert mit Pol
+		und Promoter.  Durch Signalmoleküle aktiviert oder inaktiviert.
+	\item[Specifity Factor] Dirigiert RNA Pol zu bestimmten Promoter.
+	\item[Genregulation in Prokaryonten] Hauptsächlich auf Ebene der
+		Transkription. Operon ist Sammlung von Genen hinter selbem
+		Promoter.
+	\item[Helix turn helix] Zwei $\alpha$ helices verbunden mit $\beta$
+		Turn. Eine der Helices ist DNA-recognition Helix, bindet major
+		groove. Häufig in Prokaryonten, seltener in Eukaryonten.
+	\item[\ce{Zn2+} Finger] Längliche Loop, mit durch Cys/His koordiniertem
+		\ce{Zn2+} Atom. Häufig in Eukaryonten, selten in Prokaryonten.
+		Meist mehre Finger, einzelne Interaktion schwach.
+	\item[Lac Regulation] Repressor blockiert Pol, ausser durch
+		Lactose/IPTG gebunden. cAMP/CAP bindet upstream von -35 und
+		stimuliert Pol2 Bindung ausser durch Glucose gebunden.
+	\item[Trp Regulation] Repressor blockiert ausser durch Trp gebunden.
+		Trp bindet weiter an Protein (dh NACH Ribosom) und führt zu
+		Attenuation (Abbruch der Transkription weiter downstream durch
+		Loop) falls Trp Konzentration hoch.
+\end{description}
+
+\subsection{Transkriptionsregulation in Eukaryonten}
+
+\begin{description}
+	\item[Fundamentaler Unterschied zu Eukaryonten] Aufgrund
+		Chromatinstruktur nur Transkription wenn aktiviert. Bei
+		Eukaryonten auch schwach Transkription falls nicht aktiviert.
+	\item[Chromatin] Euchromatin locker, Hyperacetyierung. Heterochromatin
+		kompakt, Methylierung.
+	\item[HAT] Histon Acetyl Transferase. Acetyl-Coenzym A als Donor. Teil
+		von Histon-Lockerungskomplexen. Acetylierung von Lys.
+	\item[HMT] Histon Methyl Transferase. S-Adenosyl-Methionin (SAM) als
+		Donor, Transfer auf Lys oder Arg.
+	\item[Chromatin remodeling] Einfügen / entfernen von Histonen (ATP
+		Verbrauch). Verschieben der DNA auf Histone (ATP Verbrauch).
+		HAT/HMT.
+	\item[Transkriptionsaktivatoren] Interagieren mit DNA und
+		regulatorischen Proteinen (zB Steroidrezeptoren)
+	\item[Architektonische Regulatoren] Herausloopen der DNA.
+	\item[Co-Aktivatoren] Vermitteln zwischen RNAP und
+		Transkriptionsaktivatoren (zB Mediator).
+	\item[Bsp Steroid-Rezeptoren] Steroid diffundiert in Zelle, bindet an
+		Rezeptor, Bildung eines Dimers zweier Rezeptoren, diffundiert
+		in Zellkern, bindet HRE Region der DNA, bindet Coaktivator
+		welcher RNA Pol bindet.  Aufbau: Schwach konservierte
+		Aktivierungsdomäne, stark konservierte DNA Bindungsdomäne
+		(\ce{Zn2+} Finger), spezifische Hormon-Bindungsdomäne.
+\end{description}
+
+\subsection{RNA-abhängige Synthese von RNA \& DNA}
+
+\begin{description}
+	\item[Reverse Transkriptase] Transkribiert RNA zu DNA. Bei Viren häufig
+		mit RNAse H (Ribonuclease) Aktivität welche RNA des RNA/DNA
+		Hybrids abbaut. Polymersation ebenfalls 5'->3'. DNA oder RNA
+		als Template.
+	\item[AZT] Thymidin-Analog. HIV-RT hat höhere Affinität für AZT als
+		Thymidin, zelluläre DNA Pol tiefere. Führt zu Einbau von AZT
+		nur durch RTs, dadurch Kettenabbruch.
+\end{description}
+
 
 \section{Post-transkriptionelle RNA Prozessierung}
-Test
+
+\subsection{Eukaryontische mRNA: Capping, Splicing, Polyadenylierung}
+
+\begin{description}
+	\item[RNAP] Ribonukleotid-Protein-Partikel. RNA in Proteine gehüllt. In Zelle nie freie RNA.
+	\item[Capping] Anhängen eines 5' 7-Methylguanosin Cap an Pol2
+		Transkripte via 5'-5' Triphosphat.
+	\item[RNA Splicing] Spliceosomal: Wie oben. Gruppe 1: Guanin
+		Selbstangriff. Gruppe 2: RNA katalysiert in Pflanzen. pre-tRNA:
+		Protein-katalysiert, weder self-splicend noch Introns.
+	\item[Splicing] Ausschneiden der Introns. Exons nicht zwingend
+		codierend, kann auch UTR sein (vor Start / nach End Codon).
+		\SI{30}{\percent} des menschlichen Genoms Exon oder Intron,
+		\SI{2}{\percent} der BP codierend. Splicing durch 3' splice
+		site, 5' splice site, branch point (in Mitte). Branch point
+		greift an und spaltet 5'. Gespaltene 5' (Exon-seitig) greift an
+		und spaltet 3' (Exon-seitig). Intron löst sich.
+	\item[Spliceosom] Proteinkomplex aus 150-300 Proteinen, 5 RNAs, der für
+		jedes Intron auf- und abgebaut wird. Enthält U-snRNPs U1-U6.
+		Potentiell Riboyzm, aber Proteine für Faltung essentiell, damit
+		nicht in Isolation studierbar. Benötigt ATP für Zusammenfügen.
+	\item[U-snRNPs] U-rich small nuclear ribonucleoprotein particles.
+		100-200nts, 7 Sm Proteine, plus snRNP spezifische Proteine.
+	\item[Exon junction complex] Proteinkomplex der 20-24 nt 5' der Exon
+		Grenze bindet, und damit ehemaliges Intron markiert. Erlaubt
+		Einfluss von Introns auf Genexpression.
+	\item[Gruppe 1 self-splicing] Initiiert durch Guanin. 3' splicing site
+		(Exon-seitig) greift 5' Splicing site an. Intron löst sich,
+		bildet Loop. Kein ATP.
+	\item[Gruppe 2 self-splicing] Nukleophil ist 2' OH eines Adenosins im
+		Intron. Potentiell Vorläufer des Spliceosoms. Kein ATP.
+	\item[Vorteile von Splicing] Mehrere Varianten eines Genes, Schutz vor
+		Transposons / allgemeinen Mutationen.
+	\item[Alternatives splicing] Allgemein: Gemeinsame pre-mRNA aus der
+		verschiedene mRNA gemacht wird. Alternative exon:
+		Auslassen/Einfügen eines bestimmten Exons. Potentiell nur
+		Einseitig (5' Site vs 3' Site). Intron Retention: Fehlerhaftes
+		belassen des Introns.  häufig verfrühter Translations-Stop da
+		Stop-Codon. Mutually exclusive alternative exon: Eines von zwei
+		Exons.
+	\item[Alternative promoter and first exon] Transkriptions Start-Stelle
+		verändert, Regulation auf Transkriptions-Ebene, damit kein
+		alternatives splicing da verschiedene pre-mRNA.
+	\item[ESE, ESS] ESE splicing enhancer, bindet Regulator welcher
+		Spliceosom rekrutiert. ESS splicing silencer, verdeckt /
+		blockiert splicing site. SR-Familie Beispiel von
+		Splicing-Regulatoren. E.. exonic, I... intronic.
+	\item[Somatische Sex Determination in Drosophilia] Kaskade. Sex-Lethal
+		Protein (SXL) reguliert Splicing eigener mRNA. Bei weiblicher
+		Version blockiert SXL Splicing Site, Verwendung späterer
+		(End-)Site. Bei männlich frühere Site verwendet, enthält
+		weiteres Exon welches Stop-Codon enthält.
+	\item[Recruitment / Kinetic Splicing] Recruitement:
+		Transkriptionskomplex rekrutiert Splicing Faktoren. Kinetic:
+		Verwendung der stärksten erreichbaren Splicing Site, damit
+		durch Transkriptionsgeschwindigkeit reguliert.
+	\item[Polyadenylierung] Poly-A Schwanz an 3' Ende. Fördert Export ins
+		Zytoplasma, verhindert Exonukleolytischer Verdau, Fördert teils
+		Translation. Ausgelöst durch stark konserviertes PolyA-Signal
+		kurz vor Schnittstelle. Zuerst Schnitt dann Polyadenylierung.
+		Verwendet grossen Proteinkomplex welcher mit CTD der RPol2
+		assoziiert.
+	\item[CPSF-73] unspezifische Endonuklease die bei Polyadenylierung an
+		zugänglicher Stelle schneidet.
+	\item[Regulation der PolyA] Bsp B-Zellen Reifung. Inaktive Zellen:
+		CstF-64 tief, bindung der distalen PolyA Stelle mit starker DSE
+		(Element Downstream der PolyA Stelle). Aktive Zellen: CstF-64
+		hoch, zusätzliche Bindung der proximalen PolyA Signal mit
+		schwachem DSE.
+	\item[Termination der RPol2] Alosterisches Modell:
+		Konformationsänderung an Terminationssignal führt zu
+		Termination. Torpedo Modell: Nach endonukleolytischem Schnitt
+		entsteht 3' Ende mit freiem 5' welches schnell abgebaut wird,
+		RPol2 fällt dadurch ab.
+	\item[3' Prozessierung der Histon-mRNA] Ohne Introns, 3' Ende durch
+		endonukleolytischen Schnitt ohne PolyA. Verwendet HLF
+		Polyakomplex, ebenfalls CPSF-73 als Endonuclease.
+\end{description}
 
 \section{Protein Synthese}
 Test
