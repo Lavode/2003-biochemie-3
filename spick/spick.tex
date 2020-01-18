@@ -518,6 +518,7 @@
 		nicht in Isolation studierbar. Benötigt ATP für Zusammenfügen.
 	\item[U-snRNPs] U-rich small nuclear ribonucleoprotein particles.
 		100-200nts, 7 Sm Proteine, plus snRNP spezifische Proteine.
+		Teils katalytisch aktiv.
 	\item[Exon junction complex] Proteinkomplex der 20-24 nt 5' der Exon
 		Grenze bindet, und damit ehemaliges Intron markiert. Erlaubt
 		Einfluss von Introns auf Genexpression.
@@ -572,6 +573,107 @@
 	\item[3' Prozessierung der Histon-mRNA] Ohne Introns, 3' Ende durch
 		endonukleolytischen Schnitt ohne PolyA. Verwendet HLF
 		Polyakomplex, ebenfalls CPSF-73 als Endonuclease.
+\end{description}
+
+\subsection{mRNA Editing}
+
+\begin{description} 
+	\item[ADAR] Adenosin deaminases acting on RNA. Deaminieren Adenosin von
+		mRNA und ncRNA zu Inosine, welches als Guanosin erkannt wird.
+		Viel im Gehirn. ADAR Mutationen mit ALS gelinked. ADAR1, ADAR2
+		editieren mRNA von Gabra-3 (UE von GABA), führen zu Isoleucin
+		-> Methionin Substitution. Mutationsrate steigt in Embryo /
+		Säugling über Zeit, erlaubt Gradient. A->I Editing auch bei
+		SINEs (nc Transposons)
+	\item[Insertion / Deletion] RNAs aus Mitochondrien und Chloroplasten
+		haben extensive Insertion/Deletion von zB Uridin. Benötigt
+		komplementäre RNA
+\end{description}
+
+\subsection{rRNA und tRNA Prozessierung}
+
+\begin{description} 
+	\item[Ribosomale RNA in Bakterien] Produktion von 16S, 23S, 5S und
+		einigen tRNA aus 30S pre-RNA, endonukleolytisch geschnitten \&
+		Enden exonukleolytisch getrimmt. Vor Schnitt viele
+		Basenmodifikationen
+	\item[Ribosomale RNA in Eukaryonten] 45S durch Pol1, 5S durch Pol3.
+		Ebenfalls Cleaving und Modifikationen.
+	\item[snoRNPs] Small nucleaolar ribonucleoprotein particles.
+		\SIrange{60}{300}{nt} snoRNA plus Proteinkomplex welcher
+		Modifikationen katalysiert. snoRNA hat komplementären Teil zu
+		Ziel rRNA, platziert damit Enzym an korrektem Ort. Häufig in
+		Introns des Gens dessen RNA es modifiziert. Häufig Uridin zu
+		Pseudouridin (Box H/ACA), oder Nukleosid Methylierung (Box C/D).
+	\item[Prozessierung und Modifikation von tRNA] 5' durch RNAse P, 3'
+		durch RNAse D, Basenmodifikationen, Splicing durch Endonuklease
+		/ Ligase, Anfügen des CCA Trinukleotids an 3' durch tRNA
+		Nukleotidyltransferase (in Bakterien teils schon in Genom)
+	\item[RNAse P] Ribozym. Proteinteil wichtig für Stabilität und erkennen
+		des Substrats.
+	\item[tRNA Nukleotidyltransferase] Kein RNA/DNA Template,
+		Proteinstruktur definiert angefügte Nt durch H-Brücken mit
+		Arginin / Phosphat-Sauerstoff Rückgrat.
+\end{description}
+
+\subsection{RNAi und miRNA}
+
+\begin{description}
+	\item[dsRNA, DICER, siRNA] Aus zB Infektion. Schnitt zu ca 20nt siRNA
+		mit 2nt 3' Überhang an beiden Seiten durch DICER (wegen
+		DICER-dsRNA Komplex, Distanz Bindungsstelle zu RNAse Domain),
+		Bildung RISC Komplex, mRNA Verdau.
+	\item[RISC] Viele verschiedene Proteine zusätzlich zu siRNA. Immer
+		eines der Argonaute Familie. Von dsRNA bindet jener Strang mit
+		schwächerer Hybridstabilität auf 5' Seite an RISC, anderer wird
+		abgebaut. Grund: Helicase denaturiert bei 'einfacherem' Ende,
+		mit mehr AU Paaren.
+	\item[RNAi] pri-miRNA aus Genom. pre-miRNA mittels DROSHA, Export aus
+		dem Zellkern. Schneiden zu miRNA durch DICER, danach regulär
+		RISC Komplex. \SI{60}{\percent} der mRNA durch miRNA
+		regulierbar, häufig mehrere miRNA per mRNA. miRNA nicht
+		unbedingt \SI{100}{\percent} komplementäre Basen, in welchem
+		Falle nur Translation-Repression statt mRNA Abbau.
+\end{description}
+
+\subsection{mRNA Degradierung}
+
+\begin{description}
+	\item[RNA Regulation] Transkription (Promoter, Enhancer,
+		Transkriptionsfaktoren, RNAPol2) vs Abbau (cis-acting Elemente,
+		RNA-bindende Prot, RNAsen)
+	\item[Exonukleasen] Abbau von Ende her. Entweder 5'->3' oder 3'->5'.
+	\item[Endonukleasen] Hydrolyisieren interne Phosphodiesterbindungen.
+		Resultiert in 5' Monophosphat + 3' OH vs 5' OH + 3' Phosphat.
+		Spielen weiter Rolle in vielen Prozessierungsreaktionen.
+	\item[RNAse A] Häufigste und aktivste RNAse. Schneidet 3' von
+		Pyrimidinen.
+	\item[RNAse E] In Bakterien Abbau von mRNA. Endonukelolytischer
+		Schnitt, bindet an unstrukturierte AU-reiche Regionen.
+	\item[Degradosom] Proteinkomplex in Bakterien aus RNAse E, PNPase, RNA
+		Helikase RhlB und Enolase.
+	\item[mRNA Abbau in Bakterien] Bakteriell mRNA an 5' Ende nicht
+		modifizert (dh Triphosphat). RppH macht daraus Monophosphat an
+		welches RNAse E binden kann. Danach Abbau durch RNase E und 3'
+		5' Exonukleasen. Bei Stemp Loop an 3' Ende: PAP1
+		oligoadenyliert Fragment.
+	\item[mRNA Abbau in Eukaryonten] Normal: Deadenylierung, Decapping
+		beider Enden, exonukleolytischer Abbau von beiden Enden.
+		Spezialfälle zwecks zB Qalitätskontrolle:
+		Deadenylierungs-unabhängiges Decapping, Endonucleolysis (Abbau
+		ab Mitte, braucht kein Decapping).
+	\item[Deadenylierung] Häufig der limitierende Schritt des Abbaus, Länge
+		des PolyA Schwanzes bestimmt damit Stabilität der mRNA.
+		\ce{Mg2+} abhängig, viele Deadenylasen, DEDD vs EEP Familie.
+	\item[PolyA Schwanz] Ausbildung zirkulärer Struktur mit PolyA -> PABP
+		-> elF4G -> CAP. Dadurch CAP nicht zugänglich. Bei Abbau PolyA
+		wird CAP zugänglich und darauf de-CAPped.
+	\item[RNA Exosom] Multisubunit von 3'-5' exonukleasen. RNA Reifung (3'
+		Prozessierung 5.8S rRNA, snoRNA, snRNA). RNA Degradation (3'-5'
+		exonukleolytisch). RNA Überwachung (Qualitätskontrolle). Bei
+		Archaein katalytisches Zenter in Innerem des Komplexes, bei
+		eukaryonten in Äusserem.
+
 \end{description}
 
 \section{Protein Synthese}
