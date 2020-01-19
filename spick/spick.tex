@@ -1,4 +1,4 @@
-\documentclass[a4paper,twocolumn,usegeometry,english,fontsize=6,DIV=16]{scrartcl}
+\documentclass[a4paper,twocolumn,usegeometry,english,fontsize=5,DIV=24]{scrartcl}
 
 % Localization options
 \usepackage[english]{babel}
@@ -16,7 +16,8 @@
 
 % Houston, we need to save space.
 
-\usepackage[bottom=2cm,top=2cm]{geometry}
+\usepackage[bottom=1cm]{geometry}
+\setlength{\voffset}{-0.75in}
 
 % No vertical space inbetween lists.
 \usepackage{enumitem}
@@ -678,12 +679,12 @@
 
 \section{Protein Synthese}
 
-\subsection{Der genetische Code}
+\subsection{Der genetische Code \& Struktur von tRNAs und Ribosomen}
 
 \begin{description}
 	\item[Wichtigkeit] In Bakterien bis zu \SI{90}{\percent} der Energie,
 		\SI{35}{\percent} des Trockengewichtes für Translation.
-		\SIrange{10}{20}{AS per s}.
+		\SIrange{10}{20}{AS per s} in E. Coli.
 	\item[Entschlüsselung] Sytnthese bestimmter Nukleotid Repeats (zB Poly
 		U, UCU, ...).  Translation mit markierten AS.
 	\item[Codon anticodon Bindung] Codon (mRNA) 1-3 bindet mit 3-1 von
@@ -708,6 +709,76 @@
 		Teile der Proteine auf Ribisomaler Oberfläche, unstrukturierte
 		Teile der Proteine ragen in rRNA Strukturen hinein und
 		interagieren.
+\end{description}
+
+\subsection{Translation: Initiation, Elongation und Termination \& Regulation
+der Translation und Qualitätskontrolle von mRNA}
+
+\begin{description}
+	\item[Ribosom Sites] E: Exit. P: Peptide Bonding. A: Amino-Acetylating.
+	\item[Translation] Alle Schritte der Protein-Synthese die Ribosome
+		involvieren. Aktivierung: AS-tRNA ist aminoacetyliert.
+		Initiation: mRNA und tRNA binden an kleine ribosomale UE,
+		grosse UE bindet. Elongation: Repetitive Bindung von
+		aktivierter tRNA und Peptid-Bindung bis Ribosom Stop Codon
+		erreicht. Termation: Translation stoppt, mRNA und Protein
+		dissassozieren, Ribosom recycled. Faltung: Protein wird
+		gefaltet \& posttranstlationelles Processing.
+	\item[Translation factors] tRNA Mimikry. Katalysieren (Rate \&
+		Korrektheit) verschiedene Prozesse. Regulieren Interaktionen
+		zwischen mRNA, tRNA, rRNA.
+	\item[EF / IF / RF] eIF3: Eukaryotich initiation factor 3. 13 UE, grosser
+		Translation Faktor. EF: Elongation Faktor, IF: Initiation
+		Faktor, RF: Release Faktor, eIF/eEF: Eukaryotic.
+	\item[Initiation] Rekrutierung kleiner Ribosom UE zu mRNA, Bindung
+		Initiator tRNA (P: fMet, E: Met mit spezieller tRNA welche
+		durch IF erkannt) an Initiation-Codon (Prokaryonten: Kleine Rib
+		UE bindet direkt an Shine-Dalgaro Sequenz mittels 16S rRNA der
+		30S UE. Eukaryonten: Rib `scanned' mRNA nach Kozak Sequenz (...
+		AUG). Rekrutierung der grossen Ribosom UE.
+	\item[Translation Initiation in Bakterien] 1: 30S bindet IF1, IF3,
+		mRNA. IF3 hält 50S fern. IF1 blockiert tRNA Bindung in Rib an A
+		Site, mRNA mit Shine-Dalgaro ausgerichtet. 2: IF2 bindet 30S,
+		rekrutiert fMet an P Site. 3: IF1,2,3 gehen, 50S assoziiert,
+		IF2 hydrolisiert GTP.
+	\item[Translation Initiation in Eukaryonten] Über 12 IF, mechanische
+		Unterschiede, mRNA zirkulär während Translation durch eIF4F. 1:
+		40S, eIF1A (A Site), eIF3 (P Site), eIF1 (E Site) binden (43S). 2:
+		eIF2 rekrutiert Initiation tRNA, bindet. eIF5, eIF5B binden. 3:
+		mRNA bindet eIF4F. und dann 43S (48S). 4: 5'->3' Scanning der
+		mRNA bis AUG. 5: 60S assoziiert (80S), viele IF released.
+	\item[Virale \& eukaryotische mRNA] Teils kein CAP, binden eIF und 40S
+		intern, damit besser als reguläre E mRNA.
+	\item[Elongation] 1: Decoding: Erkennung \& Korrekturlesen basierend auf
+		Codon/Anticodon, nicht AS. 2: Peptid-Bindung: Bindung zwischen
+		C-Terminal in P Site, N-Terminal in A Site. Peptid-Kette immer
+		an `neuester' tRNA, führt zu Biegung alter tRNA, was
+		Komplex-Bewegung begünstigt. 3: Translokation: EF binden A
+		Site, stossen, Ribosom bewegt sich, ungeladene tRNA löst sich
+		aus E Site.
+	\item[EF] EF-Tu (E: eEF1$\alpha$): Bindet aminoacetylierte tRNA \& GTP.
+		EF-Ts (E: eEF1$\beta$): Verdrängt GDP aus EF-Tu. EF-G (E:
+		eEF2): Förder Translokation durch GTP Hydrolysis.
+	\item[Termination] 1: Erkennung der Stop-Sequenz, bedingt dass keine
+		tRNA binden kann, sonst häufig Elongation statt Termination. 2:
+		Hydrolysis der terminalen tRNA-Peptid Bindung. 3:
+		Disassoziierung des Rib.
+	\item[In P] RF-1 (bindet UAG oder UAA) bzw RF2 (Bindet UGA oder UAA).
+		Dadurch bindet Peptidyl Transferase Peptid-Kette an
+		Wasser-Molekül statt an neue AS, Peptid-Kette löst sich. RF3
+		GTPAse löst RF1, RF2. Ribosom-Komplex (2 UE, mRNA, tRNA durch
+		RRF unter GTP verbrauch rezykliert.
+	\item[In E] eRF1 (erkennt alle Stop Codons) und eRF3 assoziieren in
+		Cytoplasma, binden mRNA. eRF3 ähnlich zu EF-Tu hydrolysiert
+		GTP. ABCE1 löst Peptid, und disassoziiert Ribosom, mRNA, tRNA,
+		RF1.
+	\item[Puromycin] Bindet A Site, wird Teil der Peptid-Kette, aber keine
+		Translokation möglich.
+	\item[Polysom] Mehrere Ribosome auf einer mRNA.
+	\item[Regulation] Stärker in Eukaryoten, als grösseres Delay wegen
+		Separation von Translation \& Transkription. Reguliert global
+		und mRNA-spezifisch. Bsp AS-Mangel führt zu ungeladenen tRNA
+		welche binden und Translation inhibieren.
 \end{description}
 
 \end{document}
