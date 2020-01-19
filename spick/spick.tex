@@ -135,7 +135,7 @@
 		Chromosom Kompaktierung. Specific erkennt spezifisch Sequenz
 		durch H-Brücken mit BP, zB Regulation der Gen Expression.
 		Kooperativität: Konformationsänderung einer Untereinheit führt
-		zu Konfand anderer UE. Stark reguliert.
+		zu konformationsänderung anderer UE. Stark reguliert.
 	\item[Nukleosid / Nukleotid] (Desoxy)ribose \& Stickstoffbase vs
 		Nukleosid \& Phosphatgruppe
 	\item[Chemische Transformation von Nukleinsäuren] Spontan (Mutationen)
@@ -187,8 +187,8 @@
 	\item[Substitutionsmutation / Punktmutation] Austasch eines BP gegen
 		anderes. (Transition: Purin gg Purin / Pyrmidin gg Pyrmidin,
 		Transversion: Anders). Aufgrund zweisträngiger DNA sind Point
-		mutations nach 1 Generation noch erkennbar, nach 2ter nicht
-		mehr.
+		mutations nach 1 Generation (in welcher Fehler entstand!) noch
+		erkennbar, nach 2ter nicht mehr.
 	\item[Indel] Insertion / Deletion
 	\item[Silent / neutral mutation] Ohne Auswirkung auf Genfunktion / AS-Sequenz
 	\item[Single nucleotide polymorphism SNP] Kleine Mutationen in Genen
@@ -216,7 +216,7 @@
 		Methylierung da neuer Strang nicht sofort methyliert. Damit MMR
 		auf nicht-methylierten Strang/Strängen. Bildung Loop mit
 		Mismatch darin zwischen zwei Methylierten Stellen, ausschneiden
-		des Bereichs des Template Stranges, Replikation.
+		des Bereichs des Tochter-Stranges, Replikation.
 	\item[Base excision repair BER] Erkennen aller Basen die keine
 		H-Brücken mehr bilden (Aufgrund zB Depurinierung oder
 		Deaminierung). Ausschneiden des leeren Rückgrates, Replikation.
@@ -225,7 +225,7 @@
 		Replikation.
 	\item[Doppelstrangbrüche] Während und kurz nach Replikation: Reparatur
 		durch Homologe Rekombination (Ausrichtung an Schwesterstrang,
-		dan erneute Replikation). Ansonsten: Nonhomologous end joining,
+		dann erneute Replikation). Ansonsten: Nonhomologous end joining,
 		Abschneiden des Überhanges, dann zusammenfügen.
 	\item[SOS Response] DNA Schaden -> Inaktiviert LexA -> Expression SOS
 		Gene (Mehr und weitere DNA Reparatur Gene, keine Zellteilung).
@@ -266,7 +266,7 @@
 
 \subsection{DNA Replikation}
 \begin{description}
-	\item[Semi-konservativ] Bei Replikation werden Stränge des
+	\item[Semi-konservativ] Bei Replikation werden a) Stränge des
 		Doppelstranges getrennt und b) bleiben Stränge intern als
 		Einheit.
 	\item[5' -> 3'] Des neuen Stranges, dh 3' -> 5' des Template Stranges.
@@ -277,7 +277,7 @@
 	\item[Replikation] Bidirektional ab ORI, Replication Fork bei Trennung
 		des Doppelstranges. Benötigt RNA Primer und \ce{Mg2+} Ionen.
 	\item[DNA Polymerase Fehlerrate] DNA Polymerasen haben tiefe Fehlerrate
-		von \SIrange{10E-9}{10E-10} aufgrund a) Geometrie der
+		von \SIrange{10E-9}{10E-10}{nt^-1} aufgrund a) Geometrie der
 		Basenpaarung b) 3' -> 5' Exonukleasenaktivität (entfernen
 		falscher nt) c) DNA Reparatur.
 	\item[DNA Polymerasen in E. Coli] Pol3 (9 Polypeptide, 22 UE)
@@ -294,14 +294,14 @@
 	\item[DNA Ligase] Aktiviert 5' durch Adenylierung (Eukaryonten ATP,
 		Bakterien NAD+), dann Ausbildung Phosphodiesterbindung.
 	\item[Termination der Replikaton] Richtungs-spezifische
-		Terminuns-Regionen halten Replikationsgabel an. Topoisomerase
+		Terminus-Regionen halten Replikationsgabel an. Topoisomerase
 		entwindet die zwei Stränge.
 	\item[Replikation in Eukaryonten] Verknüpft mit Zellzyklus (ua
 		Chromatin), Replikation parallel an mehreren AT-reichen
 		Stellen, ca 50 nt/s (Vgl mit 1000 nt/s in Bakterien). Primer
-		hat RNA (Primase) und DNA (Pol alpha) Komponenten. Primer
+		hat RNA (Primase) und DNA (Pol $\alpha$) Komponenten. Primer
 		entfernt durch RNAse (RNA) und Flap endonuclease (DNA), Loch
-		aufgefüllt durch Pol delta, geschlossen durch Ligase.
+		aufgefüllt durch Pol $\delta$, geschlossen durch Ligase.
 	\item[Telomere] G-reiche repetitive Sequenzen an Ende der Chromosomen,
 		verhindert Informationsverlust in Zellen der Keimbahn (nicht
 		aber somatische) durch lagging Strand. Wird jeweils wieder
@@ -338,7 +338,7 @@
 		Recombinase erkennt Sequenzen, bricht DNA und rekombiniert.
 		Zwei Familien mit gleicher Funktion, Integrase nutzt Tyrosin,
 		Invertase/Resolvase nutzt Serin. Site-specific recombination
-		führt zu Inversion, oder Insertion/Deletion.
+		führt zu Inversion, oder Insertion/Deletion je nach Ausrichtung.
 	\item[Antikörper Diversität Immunoglobulingene] Konstante und variable
 		funktionale Region. Durch site-specific Recombination werden
 		viele verschiedene (eine je Zelle) Antikörper exprimiert.
@@ -356,7 +356,7 @@
 	\item[Transposons in Organismen] Mensch ca \SI{43}{\percent} des
 		Genoms, aber bis auf einige LINEs alles inaktiv. Maus viele
 		aktive Retro-Elemente, verantwortlich für \SI{10}{\percent} der
-		Mutationen (vgl Mensch \SI{0.2}{\percent}.
+		Mutationen (vgl Mensch \SI{0.2}{\percent}).
 	\item[Reverse Transkriptase Aktivität] DNA Polymerase: 3' OH Primer,
 		RNA oder DNA als Template. \ce{Mg2+} katalysiert. Hohe
 		Fehlerrate da kein Proof-reading. Ribonuklease: RNAse H
@@ -388,7 +388,7 @@
 \begin{description}
 	\item[Promotoren] -35 und -10 (Pribnow) AT-Reiche Sequenzen. Besonders
 		stark exprimierte Gene noch -60 bis -40 konservierte `UP
-		Element" Sequenz.
+		Element' Sequenz.
 	\item[Initiations Stelle] $\Sigma$ Faktor bindet, rekrutiert Rest der
 		Polymerase. Nach Promoter disasoziiert $\sigma$ und wird durch
 		NusA ersetzt.
@@ -397,7 +397,7 @@
 		mRNA, migriert zu Pol unter ATP Verbrauch, löst Pol ab.
 		$\rho$-unabhängig: GC-reicher Hairpin der mRNA stoppt RNAP,
 		führt zu Ablösung der mRNA und Rehybridisierung der DNA.
-	\item[Eurkarontische RNAP Promotoren] Pol1 ein Promoter,
+	\item[Eurkaryontische RNAP Promotoren] Pol1 ein Promoter,
 		Spezies-spezifisch. Pol3 internal Promotoren (+40 bis +80) vs
 		upstream (ähnlich RNA Pol 2)
 	\item[RNAP 2 Promotoren] Länger als prokaryontische Promotoren.
@@ -408,7 +408,7 @@
 	\item[Enhancer Elemente] Bindung durch regulatorische Proteine
 		upstream. Interaktion mit Mediator, jener mit Pol.
 	\item[Transkriptionsinitiation RNAP2] Bindung TBP und TF. Rekrutierung
-		Pol2, Phosphorylierung der Pol an CTD (c-terminal-domian)
+		Pol2, Phosphorylierung der Pol an CTD (c-terminal-domain)
 		startet Transkription, TF helfen Elongation, Dephosphorolation
 		der CTD katalysiert durch Terminationsfaktor führt zu Auflösung
 		der Pol2.
@@ -421,7 +421,7 @@
 		aus Pol2. TF2H entwindet DNA an Promoter (Helicase),
 		Phosphoryliert CTD, rekrutiert weitere Proteine. Zusammen
 		Äquivalenz zu $\sigma$ Einheit der Prokaryonten.
-	\item[RNA2P EF] Erhöhen Aktivität der Polymerase.
+	\item[RNAP2 EF] Erhöhen Aktivität der Polymerase.
 \end{description}
 
 \subsection{Transkriptionsregulation in Prokaryonten}
@@ -442,36 +442,39 @@
 	\item[Helix turn helix] Zwei $\alpha$ helices verbunden mit $\beta$
 		Turn. Eine der Helices ist DNA-recognition Helix, bindet major
 		groove. Häufig in Prokaryonten, seltener in Eukaryonten.
-	\item[\ce{Zn2+} Finger] Längliche Loop, mit durch Cys/His koordiniertem
-		\ce{Zn2+} Atom. Häufig in Eukaryonten, selten in Prokaryonten.
+	\item[\ce{Zn^{2+}} Finger] Längliche Loop, mit durch Cys/His koordiniertem
+		\ce{Zn^{2+}} Atom. Häufig in Eukaryonten, selten in Prokaryonten.
 		Meist mehre Finger, einzelne Interaktion schwach.
 	\item[Lac Regulation] Repressor blockiert Pol, ausser durch
 		Lactose/IPTG gebunden. cAMP/CAP bindet upstream von -35 und
 		stimuliert Pol2 Bindung ausser durch Glucose gebunden.
-	\item[Trp Regulation] Repressor blockiert ausser durch Trp gebunden.
-		Trp bindet weiter an Protein (dh NACH Ribosom) und führt zu
-		Attenuation (Abbruch der Transkription weiter downstream durch
-		Loop) falls Trp Konzentration hoch.
+	\item[Trp Regulation] Trp Repressor: Bindet Operon wenn Trp gebunden.
+		Trp Attenuation: 4 Bereiche in mRNA. 1 encodiert für einige
+		Trp. Trp hoch -> Schnelle Translation 1/2 -> Bildung Hairpin
+		3/4 welcher Transkription abbricht. Trp tief -> Langsame
+		Translation 1 -> Bildung Hairpin 2/3, welcher Transkription
+		nicht inhibiert.
 \end{description}
 
 \subsection{Transkriptionsregulation in Eukaryonten}
 
 \begin{description}
-	\item[Fundamentaler Unterschied zu Eukaryonten] Aufgrund
+	\item[Fundamentaler Unterschied zu Prokaryonten] Aufgrund
 		Chromatinstruktur nur Transkription wenn aktiviert. Bei
-		Eukaryonten auch schwach Transkription falls nicht aktiviert.
-	\item[Chromatin] Euchromatin locker, Hyperacetyierung. Heterochromatin
+		Prokaryonten auch schwach Transkription falls nicht aktiviert.
+	\item[Chromatin] Euchromatin locker, Hyperacetylierung. Heterochromatin
 		kompakt, Methylierung.
 	\item[HAT] Histon Acetyl Transferase. Acetyl-Coenzym A als Donor. Teil
-		von Histon-Lockerungskomplexen. Acetylierung von Lys.
+		von Histon-Lockerungskomplexen. Acetylierung von Lys. HDAC
+		Histondeaceyltransferasen.
 	\item[HMT] Histon Methyl Transferase. S-Adenosyl-Methionin (SAM) als
-		Donor, Transfer auf Lys oder Arg.
+		Donor, Transfer auf Lys oder Arg. HDM Histondemthylasen.
 	\item[Chromatin remodeling] Einfügen / entfernen von Histonen (ATP
 		Verbrauch). Verschieben der DNA auf Histone (ATP Verbrauch).
-		HAT/HMT.
+		HAT/HMT/HDAC/HDM.
 	\item[Transkriptionsaktivatoren] Interagieren mit DNA und
 		regulatorischen Proteinen (zB Steroidrezeptoren)
-	\item[Architektonische Regulatoren] Herausloopen der DNA.
+	\item[Architektonische Regulatoren] Herausloopen der DNA aus Chromatin.
 	\item[Co-Aktivatoren] Vermitteln zwischen RNAP und
 		Transkriptionsaktivatoren (zB Mediator).
 	\item[Bsp Steroid-Rezeptoren] Steroid diffundiert in Zelle, bindet an
@@ -479,7 +482,7 @@
 		in Zellkern, bindet HRE Region der DNA, bindet Coaktivator
 		welcher RNA Pol bindet.  Aufbau: Schwach konservierte
 		Aktivierungsdomäne, stark konservierte DNA Bindungsdomäne
-		(\ce{Zn2+} Finger), spezifische Hormon-Bindungsdomäne.
+		(\ce{Zn^{2+}} Finger), spezifische Hormon-Bindungsdomäne.
 \end{description}
 
 \subsection{RNA-abhängige Synthese von RNA \& DNA}
