@@ -1,4 +1,4 @@
-\documentclass[a4paper,twocolumn,usegeometry,english,fontsize=5,DIV=24]{scrartcl}
+\documentclass[a4paper,twocolumn,usegeometry,english,fontsize=5,DIV=28]{scrartcl}
 
 % Localization options
 \usepackage[english]{babel}
@@ -16,7 +16,7 @@
 
 % Houston, we need to save space.
 
-\usepackage[bottom=1cm]{geometry}
+\usepackage[bottom=0.75cm,left=1cm,right=1cm]{geometry}
 \setlength{\voffset}{-0.75in}
 
 % No vertical space inbetween lists.
@@ -779,6 +779,92 @@ der Translation und Qualitätskontrolle von mRNA}
 		Separation von Translation \& Transkription. Reguliert global
 		und mRNA-spezifisch. Bsp AS-Mangel führt zu ungeladenen tRNA
 		welche binden und Translation inhibieren.
+\end{description}
+
+\subsection{Regulation der Translation}
+
+\begin{description}
+	\item[Regulation der Initiation in Eukaryonten] eIF2B bindet
+		normalerweise eIF2 zwecks Austausch GDP zu GTP.
+		Phosphorylierung von eIF2 führt zu permanenter Bindung zu
+		eIF2B, inhibiert Initiation.
+	\item[Iron response] IRP (iron response protein) bindet IRE (iron
+		response element) in UTR von mRNA. Bindung 5' inhibiert
+		Translation, Bindung 3' verhindert mRNA Degradation. Bindung
+		von \ce{Fe} an IRP verhindert Bindung an IRE.
+\end{description}
+
+\subsection{Qualitätskontrolle von mRNA, Posttranslationelle Prozessierung:
+Proteinfaltung, -modifikation, -lokalisierung}
+
+\begin{description}
+	\item[non-stop mRNA] mRNA ohne Stop Codon wg Transkriptions-Abbruch
+		oder Mutation. Bei erreichen des Endes der mRNA Fehler durch
+		Ribosom erkennt, und mRNA und Protein entfernt.
+	\item[Ribosom Stalling in P] Ribosom nicht in der Lage tRNA oder TF zu
+		rekrutieren. tmRNA bindet, encodiert 9 weitere AS \& Stop Codon
+		die an Peptidkette angehängt werden und Peptidabbau in Zelle
+		auslösen. mRNA durch RNAse P degradiert.
+	\item[NGD (No-Go) \& NSD (Non-stop) -decay] In E aufgrund zirkulärer
+		mRNA keine Translation partieller mRNA. Stalling führt zu NGD
+		worin Proteine als RF agieren und den Komplex recyclieren.
+		Fehlendes Stop Codon führt zu NSD mit ähnlichem Mechanismus.
+		Peptid und mRNA jeweils abgebaut.
+	\item[NMD (Nonsense mediated RNA decay)] ORF durch verfrühtes Stop
+		Codon terminiert. Durch UPF1 erkannt, mRNA abgebaut. Gewisse
+		mRNA sensitiv gegen NMD, potentiell Rolle in Differentiation /
+		Viraler Infektion.
+	\item[Nonsense suppression \& Programmed frameshifting] NS: Stop Codon
+		nicht erkannt, selten. PFS: Ribosom bewegt sich +-1 nt statt
+		+3.
+	\item[Peptid Ausgang des Rib] Zu Eng für Faltung. Chaperones zB Trigger
+		Factor binden an Ausang zwecks Schutz und Katalyse der
+		korrekten Faltung.
+	\item[Aggregation von falsch gefalteten Proteinen] Amorphe Aggregate,
+		Oligomere oder Amyloid Fibrillen.
+	\item[Post-translationelle Modifikationen] Phosphoryierung von Serin,
+		Threonin, Tyrosin durch Katalase und ATP. Methylierung von N
+		oder O durch Methyltransferase, SAM (s-adenosyl-methionine)
+		primärer Donor. Erhöht Hydrophobität, neutralisiert negative
+		AS.
+\end{description}
+
+\subsection{Regulation der Gen-Expression \& Krankheiten}
+
+\begin{description}
+	\item[The big picture] Genom 20k-25k Gene. Transcriptome 100k
+		Transkripte. Proteom >1000k Proteine. Gen-Regulation erlaubt
+		hohe Komplexität aber auch Potential für Fehler.
+	\item[Zellteilung] Symmetrisch führt zu zwei identischen Tochterzellen.
+		Asymmetrisch zu Zellen mit Protein- oder mRNA Gradient,
+		entweder wegen lokaler Translation oder aktivem Transport.
+	\item[Bicoid] Transkriptionsfaktor in Drosophilia mit
+		Differentiations-Fkt. Gradient in wt Ei essentiell, in mt ohne
+		Bicoid kein lebensfähiger Organismus (2 Abdomen, kein Kopf,
+		keine Thorax).
+	\item[Drosophilia] Caudal, Hunchback und Pumilion konstant in
+		Cytoplasma. Bicoid nur Anterior, inhibiert Caudal. Nanos nur
+		Posterior, Nanos mit Pumilion inhibiert Hunchback.
+	\item[Homeotic Genes (HOX)] 8-11 Gene die Strukturbildung in bestimmten
+		Körperteilen der meisten multizellulärn Eukaryonten regulieren.
+	\item[Krebs] Einfluss auf mindestens eine von sechs Zell-Eigenschaften:
+		1: Wachtsum ohne Wachtsumssignale. 2: Wachstum trotz
+		Wachtsums-Surpressor. 3: Metastasis dh Trennung der Bindung an
+		umliegendes Gewebe. 4: Replikative Unsterblichkeit,
+		unlimitierte Anzahl Zellteilungen. 5: Stimulation von
+		Blutgfäss-Wachstum um Zelle zwecks Nährstoffen. 6:
+		Unterdrückung der Apoptose.
+	\item[Onkogene] Signal-Moleküle, -Rezeptoren, -Transducer,
+		Transkriptions-faktoren.
+	\item[Tumor-Surpressor] Kontrol-Proteine welche Zellteilung regulieren,
+		DNA-Reparatur-Proteine.
+	\item[Tumor-Surpressor \& Onkogen] Proteine mit Apoptose-
+		(Tumor-Surpressor) und Überlebenssignal- (Onkogen) Funktion.
+	\item[Gen-Modifikation in Krebszellen] Burkitt's Lymphoma:
+		Translokation von Chromosom 8 und 14. Positioniert MYC Gen
+		neben Antikörper-Gen, damit Regulation von MYC durch
+		Antikörper-Enhancer. Überproduktion von MYC in Lymphozyten,
+		führt zu Lymphoma.
 \end{description}
 
 \end{document}
